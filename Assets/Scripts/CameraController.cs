@@ -22,6 +22,7 @@ public class CameraController : MonoBehaviour
     private float curZoom;
 
     private Camera cam;
+   
 
     private void Start()
     {
@@ -48,16 +49,17 @@ public class CameraController : MonoBehaviour
         }
         //Movement
 
-        UnityEngine.Vector3 forwart=cam.transform.forward;
-        forwart.y=0.0f;
-        forwart.Normalize();
+        UnityEngine.Vector3 forward = cam.transform.forward;
+
+        forward.y=0.0f;
+        forward.Normalize();
 
         UnityEngine.Vector3 right=cam.transform.right;
 
-        float moveX=Input.GetAxisRaw("Horizantal");
+        float moveX=Input.GetAxisRaw("Horizontal");
         float moveZ=Input.GetAxisRaw("Vertical");
 
-        UnityEngine.Vector3 dir=forwart* moveZ+right*moveX;
+        UnityEngine.Vector3 dir=forward* moveZ+right*moveX;
 
         dir.Normalize();
         dir *= moveSpeed*Time.deltaTime;

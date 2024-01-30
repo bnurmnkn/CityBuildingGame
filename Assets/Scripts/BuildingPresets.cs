@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using System.IO.Enumeration;
 
-public class BuildingPresets : MonoBehaviour
+[CreateAssetMenu(fileName = "BuildingPresets", menuName = "New Building Preset")]
+public class BuildingPresets : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int cos;
+    public int cosPerTurn;
+    public GameObject prefab;
+    public int population;
+    public int jobs;
+    public int food;
 }
+
