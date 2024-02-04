@@ -473,7 +473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 628005274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 885187338}
+        m_TargetAssemblyTypeName: BuildingPlacments, Assembly-CSharp
+        m_MethodName: ToogleBulldozer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &628005274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,6 +964,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f524e1b6e9a3e4bb7995cf22fb9568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Money: 300
+  Day: 0
+  curPopulation: 0
+  curJobs: 0
+  curFood: 0
+  maxPopulation: 0
+  maxJobs: 10
+  incomePerJobs: 10
+  statsText: {fileID: 1643153961}
+  building: []
 --- !u!4 &885187341
 Transform:
   m_ObjectHideFlags: 0
@@ -1389,7 +1411,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1356091624}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 885187340}
+        m_TargetAssemblyTypeName: City, Assembly-CSharp
+        m_MethodName: EndTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1356091624
 MonoBehaviour:
   m_ObjectHideFlags: 0
